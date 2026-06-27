@@ -38,27 +38,27 @@ Monthly and yearly running totals using `SUM() OVER()` partitioned by year, alon
 
 **Monthly cumulative:**
 
-![Cumulative Analysis Monthly](cumulative_analysis_monthly.png)
+![Cumulative Analysis Monthly](cumulative_analysis_monthly.png.png)
 
 **Yearly cumulative:**
 
-![Cumulative Analysis Yearly](cumulative_analysis_yearly.png)
+![Cumulative Analysis Yearly](cumulative_analysis_yearly.png.png)
 
 ### 5. Year-over-Year Performance Analysis
 Product-level YoY comparison using `LAG()` to pull prior year sales, calculate the difference, and flag each product as Sales Increased / Sales Decreased / No Change. Also benchmarked against each product's historical average using `AVG() OVER()`.
 
-![YoY Performance](yoy_performance.png)
+![YoY Performance](yoy_performance.png.png)
 
 ### 6. Part-to-Whole Analysis
 Category contribution to overall revenue and order volume using `SUM() OVER()` without partition — surfacing the dominance of Bikes (96.46% of revenue) and the high order share of Accessories (59.77%).
 
 **By revenue:**
 
-![Part to Whole Sales](part_to_whole_sales.png)
+![Part to Whole Sales](part_to_whole_sales.png.png)
 
 **By order volume:**
 
-![Part to Whole Orders](part_to_whole_orders.png)
+![Part to Whole Orders](part_to_whole_orders.png.png)
 
 ### 7. Customer & Product Segmentation
 - **Product segmentation** by cost range (Below 100 / 100–500 / 500–1000 / Above 1000)
@@ -78,7 +78,7 @@ Category contribution to overall revenue and order volume using `SUM() OVER()` w
 | New Customers (tenure <12 months) | 14,629 |
 | Average Selling Price | $486 |
 
-![Key Metrics](key_metrics.png)
+![Key Metrics](key_metrics.png.png)
 
 ---
 
@@ -96,7 +96,7 @@ Multi-CTE view aggregating 10+ KPIs at the customer level:
 - Average Monthly Spend
 - Customer lifespan (months)
 
-![Customer Report](report_customers.png)
+![Customer Report](report_customers.png.png)
 
 ### `gold.report_products`
 Multi-CTE view aggregating product-level KPIs:
@@ -108,7 +108,7 @@ Multi-CTE view aggregating product-level KPIs:
 - Average Monthly Revenue
 - Product lifespan (months)
 
-![Product Report](report_products.png)
+![Product Report](report_products.png.png)
 
 ---
 
